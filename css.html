@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .red{
+            color:red;
+        }
+
+        .green{
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1" class="green red">Welcome to JavaScript</h1>
+    <button onclick="changeToRed()">Red</button>
+    <button onclick="changeToGreen()">Green</button>
+
+    <script>
+        changeToRed = ()=>{
+            let h1 = document.getElementById("h1");
+            h1.classList.remove("green");
+            h1.classList.add("red");
+        }
+
+        changeToGreen = ()=>{
+            let h1 = document.getElementById("h1");
+            h1.classList.remove("red");
+            h1.classList.add("green");
+        }
+    </script>
+</body>
+</html>

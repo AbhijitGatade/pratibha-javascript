@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myh1">Welcome to JavaScript. This is awesome.</div>    
+    <button onclick="changetext()">Click Me</button>
+    
+
+    <script>
+        function changetext()
+        {
+            var myh1 = document.getElementById("myh1");
+            myh1.innerHTML = "<b>I am loving JavaScript.</b>";
+        }
+    </script>
+</body>
+</html>

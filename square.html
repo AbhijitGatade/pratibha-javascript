@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter No</label>
+    <input id="no" type="number" />
+    <button onclick="square()">Square</button>
+    <span id="divanswer"></span>
+    <script>
+        function square()
+        {
+            //To Declare variable in javascript we can use one of the 3 keywords
+            //1. let 2. const 3. var
+            //document.getElementById("")
+            //.value
+            //.innerText .innerHTML - div, span, h1..h6, p
+            let no = document.getElementById("no").value;
+            let sqr = no * no;
+            document.getElementById("divanswer").innerHTML = "Square is " + sqr;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Number 1: <input type="number" step="0.1" id="no1" />
+    Number 2: <input type="number" step="0.1" id="no2" />
+    <button onclick="add()">Add</button>
+    <span id="addition"></span>
+    <script>
+        let add = ()=>{
+            let no1 = Number(document.getElementById("no1").value);
+            let no2 = Number(document.getElementById("no2").value);
+
+            let addition = no1 + no2;
+            document.getElementById("addition").innerText = "Addition is " + addition.toFixed(2);
+        }
+    </script>
+</body>
+</html>

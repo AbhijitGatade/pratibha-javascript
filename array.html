@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = [1, 2, 3, 4, 5];
+        let b = new Array(1, 2, 3, 4, 5, 6, 7, 8);
+
+        console.log(typeof(a));
+        console.log(typeof(b));
+        console.log(a.length);
+
+        console.log(a);
+        console.log(a.toString());
+        //console.log(a.join("-"));
+
+        a.push(6);
+        console.log(a.toString());
+        a.pop();
+        console.log(a.toString());
+        a.shift();
+        console.log(a.toString());
+        a.unshift(11);
+        console.log(a.toString());
+
+        a[1] = 10;
+        console.log(a.toString());
+        delete a[2];
+        console.log(a.toString());
+    </script>
+</body>
+</html>
